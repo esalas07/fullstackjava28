@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 30</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="C:\Users\Alumno\Desktop\Curso Full Stack Java\MODULO 3\8.JQuery\Clase 58 Mario\jquery.js"></script>
+    <script>
+        //Oculta Todos los Parrafos que esten dentro de un Titulo h1
+        $(document).ready(function() {
+            $("#hide1").click(function() {
+                $("p1").hide();
+            });
+            $("#show").click(function() {
+                $("p1").show();
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#hide2").click(function() {
+                $("p2").hide();
+            });
+            $("#show").click(function() {
+                $("p2").show();
+            });
+        });
+    </script>
+
+
+
+    <style>
+        body {
+            background-color: #CCCCB2;
+        }
+        
+        #panel,
+        #flip {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+            margin-left: 300px;
+            width: 600px;
+        }
+        
+        #panel {
+            padding: 0px;
+        }
+        
+        #precio {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            text-align: center;
+            margin-top: 0px;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        
+        #hide1,
+        #hide2,
+        #show {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #parrafos {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="flip">Bicicleta Trek Procaliber 8</div>
+
+
+    <img id="panel" src="C:\Users\Alumno\Desktop\Curso Full Stack Java\MODULO 3\8.JQuery\Ejercicio30\bici.jpg">
+
+    <div id="precio">
+
+        <h1>Precio: $ 1.990.000</h1>
+
+    </div>
+
+
+
+
+    <div id="parrafos">
+
+        <h2>Características del Producto</h2>
+
+        <p1>Tipo: Mountain Bike; Aro: 29; Género: Hombre; Tipo de freno: Disco hidráulico; Descripción del freno: Shimano MT500 Disc Brake; Material del marco: Aluminio; Talla del marco: 18.5; Número de cambios: 1x12; Cambio trasero: SRAM NX EAGLE; Biela:
+            Aluminio; Piñón: Aluminio; Manillas: SRAM NX EAGLE; Suspensión: Delantera; Recorrido de la suspension delantera: 100; Horquilla: Rock Shox Suspension Fork Recon Gold 29; Manubrio: Aluminio; Sillín: Bontrager Montrose; Neumáticos: Bontrager
+            Tire XR2 Team Issue TLR, 29x2.20; Rayos: Aluminio; Requiere armado: Sí; Garantía: Limitada de por vida.
+        </p1>
+        <br>
+        <br>
+        <button id="hide1">Ocultar</button>
+        <br>
+        <br>
+        <h2>Información Adicional</h2>
+
+        <p2>Cuadro de Aluminio Alpha Platinum durable y ligero con IsoSpeed, transmisión SRAM NX EAGLE 1x12, frenos de disco hidráulicos Shimano MT500 y una tijera RockShox Recon Gold con bloqueo remoto. Además, ruedas Boost 148/110 Kovee, Comp y piezas ligeras
+            adicionales.
+        </p2>
+
+    </div>
+    <br>
+    <br>
+    <button id="hide2">Ocultar</button>
+    <button id="show">Resetear</button>
+
+
+
+
+</body>
+
+</html>
